@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Menu-Templates/static/css/main.9b0e2c2d.css",
+    "main.js": "/Menu-Templates/static/js/main.7a771c91.js",
+    "static/media/catenam.jpg": "/Menu-Templates/static/media/catenam.f56bc6fc2884c68e6ea3.jpg",
+    "static/media/logo1.jpg": "/Menu-Templates/static/media/logo1.e632de80517f489f7fbb.jpg",
+    "index.html": "/Menu-Templates/index.html",
+    "main.9b0e2c2d.css.map": "/Menu-Templates/static/css/main.9b0e2c2d.css.map",
+    "main.7a771c91.js.map": "/Menu-Templates/static/js/main.7a771c91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b0e2c2d.css",
+    "static/js/main.7a771c91.js"
+  ]
+}
