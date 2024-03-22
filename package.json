@@ -1,7 +1,7 @@
 {
   "name": "text",
   "version": "0.1.0",
-  "homepage": "https://Aditya-Jannawar.github.io/my-react-app",  
+  "homepage": "https://Aditya-Jannawar.github.io/my-react-app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
