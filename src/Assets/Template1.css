@@ -1,0 +1,294 @@
+.TitleBlock{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+
+@keyframes bounce {
+
+    0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bounceUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 55px, 0);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+}
+
+
+.overlay-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .7;
+}
+
+.imageText{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.headingimageStyle{
+    width: 100%;
+}
+
+.textCenter{
+    
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    position: absolute;
+  
+    width: 100%;
+    text-align: center !important;
+}
+
+.root{
+    background-color:antiquewhite;
+}
+
+.contain {
+    width: 100%;
+    padding-right: 50px; 
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('https://tandooripalacesd.com/images/bg.jpg');
+ 
+    color: black;
+    
+}
+
+.head{
+    background-color: antiquewhite;
+}
+
+.menu-section-title-category {
+    font-size: 2rem;
+    color: #414040;
+    font-family: inherit;
+    font-weight: normal;
+    text-align: Center;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #fff;
+    line-height: 1.4;
+    padding: 25px;
+    width: 100%;
+    animation: bounce 3s ;
+}
+.menu-section {
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: 3px solid #e2e2e2;
+    /* margin: 120px; */
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.menu-wrap {
+    padding: 12px 16px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 3px 0px #d8d8d8;
+    border-radius: 5px;
+    display: flex;
+    width: 49%;
+   
+}
+
+.menu-wrap{
+    animation: bounceUp 1s  ;
+    
+}
+
+.row1 {
+    display: flex;
+    padding: 15px ;
+    margin: 0px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    
+}
+
+.text .price {
+    font-size: 18px;
+    float: right;
+    font-weight: 400;
+    margin: 0;
+    padding: 3px;
+    border-radius: 7px;
+    color:#414040;
+}
+
+.textBlock{
+    display: 'inline-block';
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.NamePriceAlign{
+   display: flex;
+   width: auto;
+}
+
+.shortDesctext{
+    line-height: 1.4;
+    color: #323232;
+    font-weight: 400;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    margin: 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+}
+
+.longDesctext{
+    margin: 0;
+    line-height: 1.4;
+    color: #8e8e8e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: normal; */
+    width: 200px;
+    padding-top: 10px;
+    height: 55px;
+}
+
+.divider {
+    margin: auto 2%;
+    border-bottom: 1px dotted #fac463;
+    flex-grow: 1;
+}
+
+.imageStyle{
+    display: 'inline-block';
+    vertical-align: middle;
+    border-style: none;
+    width: 45%;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1150px) {
+    .menu-wrap {
+        padding: 12px 16px;
+        margin: 10px 0;
+        box-shadow: 0px 2px 3px 0px #d8d8d8;
+        border-radius: 5px;
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+    }
+    .textBlock {
+        display: 'inline-block';
+        width: 100%;
+        padding: 0%;
+        padding-top: 5px;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .menu-wrap {
+        padding: 12px 16px;
+        margin: 10px 0;
+        box-shadow: 0px 2px 3px 0px #d8d8d8;
+        border-radius: 5px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .categoryImg{
+        width: 40px;
+    }
+    .menu-section-title-category{
+        font-size: 13px;
+    }
+    .textBlock {
+        display: 'inline-block';
+        width: 100%;
+        padding: 0%;
+        padding-top: 5px;
+    }
+    .overlay-menu {
+        position: absolute;
+        top: 0px;
+        bottom: 145px;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: .7;
+    }
+    .Title{
+        display: none;
+    }
+    .shortDesctext {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .text .price {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .longDesctext {
+        font-size: 13px;
+    }
+    
+  }

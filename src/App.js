@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Template1 from './Templates/Template1';
+import Template2 from './Templates/Template2';
+import Template3 from './Templates/Template3';
+import Template4 from './Templates/Template4';
 
-function App() {
+
+const App = () => {
+  let currentUrl = window.location.pathname;
+  console.log(currentUrl);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Template1/>
+    </>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section{
+  /* background-image: url(dinner.jpg); */
+  text-align: center;
+  background-size:cover;
+  width:auto;
+  padding: 300px;
+  /* margin-bottom:50px; */
+  background-attachment:fixed;
+  color:#fff;
+}
+
+.name{
+  font-family:"cursive"; 
+  font-size: 100px;
+  font-weight: 400;
+  color: #c1a35f;
+}
+
+.desc{
+  text-transform: 'capitalize';
+  font-size:40px;
+  font-weight:400;
+  line-height:40px;
+}
+
+.section img{
+  position:absolute;
+  top:10%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  margin-bottom: 0%;
+}
+
+.containZZ {
+  margin-bottom: 20px;
+  margin-top:100px;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:400px;
+  background-attachment: fixed;
+  background-position: 40% 40%;
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-md-6 img{
+  width:100%;
+  height:250px;
+  border: none;
+  margin-bottom:50px;
+  margin-bottom:50px; 
+  margin-top:40px;
+  padding-left: 170px;
+}
+
+.cateName{
+  padding-left: 30px;
+  padding-right:160px;
+  padding-top:1px;
+}
+
+.border-menu{
+  border:1px solid rgb(231, 231, 231);;
+  margin-bottom:50px; 
+  margin-top:40px;
+}
+
+.c-n-85{
+  margin-top:85px; 
+  margin-bottom:85px;
+}
+
+.textCenterZZ{
+  text-align:center; 
+  text-decoration:underline;
+  margin-bottom:100px;
+  margin-top:100px;
+}
+
+.menu-items-containZZ {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.menu-itemZZ {
+  width:50%;
+  margin:0px 0px 20px;
+  position:relative;
+  min-height:1px;
+  padding-right:50px;
+  padding-left:50px;
+}
+
+.column{
+  display:flex;
+  justify-content:space-between;
+}
+
+.priceZZ{
+  letter-spacing:0.5px;
+  text-align:justify;
+  font-family:Lato;
+  line-height:20px;
+  font-weight:700; 
+  font-style:normal; 
+  font-size:24px; 
+  opacity:1;
+  visibility:visible; 
+  color:#c1a35f;
+  width:auto;
+}
+
+.longTextZZ{
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom:15px;
+  width:88%;
+  text-align: justify;
+}
+
+.shortTextZZ{
+  margin-bottom: auto;
+  font-size:large;
+}
+
+.menu-itemZZ::after{
+  position:absolute;
+  bottom:0;
+  left:40px;
+  width:88%;
+  border-bottom:1px dotted #000;
+}
+
+.menu-item-divider {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 88%;
+  border-bottom: 1px dotted #000;
+}
+.main{
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    padding: 100px;
+  }
+ .section img{
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: px;
+  width: 70%;
+}
+  .col-md-6 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-md-6 img {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .menu-items-containZZ {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .name{
+    font-family: "cursive";
+    font-size: 32px;
+    font-weight: 400;
+    color: #c1a35f;
+    text-align: center;
+    line-height: 30px;
+    
+  }
+  
+  .menu-itemZZ {
+    width:100%;
+    margin:0px 0px 20px;
+    position:relative;
+    min-height:1px;
+    padding-right:10px;
+    padding-left:10px;
+  }
+
+  .menu-item-divider {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+  }
+  
+  .border-menu{
+    border: 1px solid rgb(231, 231, 231);
+    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  } 
+  .shortTextZZ{
+    width:85%;
+  }
+  .longTextZZ{
+    width:80%;
+  }
+  .desc {
+    text-transform: 'capitalize';
+    font-size: 11px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: initial;
+}
+.combine{
+  text-align: center;
+}
+.section img {
+  position: absolute;
+  top: 7%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  padding-bottom: px;
+  width: 28%;
+}
+  
+}

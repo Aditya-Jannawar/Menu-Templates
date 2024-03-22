@@ -6,7 +6,53 @@
   height: 40vmin;
   pointer-events: none;
 }
+.textCenter {
+  text-align: center;
+  color: #282c34;
+}
 
+.container {
+  color: black;
+}
+
+.menu-item {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+}
+
+.leftText{
+  align-items: flex-start;
+}
+
+.rightText{
+  align-self:last baseline;
+
+}
+
+
+
+.ex h1:hover{
+  background-color: #282c34;
+  cursor: pointer;
+  color: aqua;
+}
+.demo{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.tp{
+  background-color: #282c34;
+}
+.demo2:hover{
+  background-color:red ;
+  cursor: pointer;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +81,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* App.css */
+
+.container {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.menuItemContainer {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.flexContainer {
+  flex: 1;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
 }
